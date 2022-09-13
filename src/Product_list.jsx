@@ -1,5 +1,6 @@
 import React from 'react'
 import Product_fetch from './Product_fetch';
+import WithAuth from './WithAuth';
 
 function Product_list(props) {
     const  {products}=props
@@ -24,4 +25,4 @@ function Product_list(props) {
   )
 }
 
-export default Product_fetch(Product_list);
+export default WithAuth(Product_fetch(Product_list));
